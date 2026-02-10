@@ -1,0 +1,31 @@
+services:
+  tileserver:
+    image: maptiler/tileserver-gl
+    ports:
+      - "${TILESERVER_PORT:-8080}:8080"
+    volumes:
+      - ./data/tiles:/data
+      - ./config/tileserver-config.json:/data/config.json:ro
+      - ./styles:/data/styles:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  converter:
+    build:
+      context: .
+      dockerfile: Dockerfile.converter
+    volumes:
+      - ./data:/data
+      - ./scripts:/scripts:ro
+      - ./sources:/sources:ro
+      - ./config:/config:ro
+    environment:
+      - REGIONS=${REGIONS:-europe,north-america,australia-oceania}
+    profiles:
+      - tools
+    stdin_open: true
+    tty: true

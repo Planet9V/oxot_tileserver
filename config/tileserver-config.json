@@ -1,0 +1,48 @@
+{
+  "options": {
+    "paths": {
+      "root": "",
+      "mbtiles": "/data"
+    }
+  },
+  "data": {
+    "basemap-europe": {
+      "mbtiles": "/data/basemap-europe.pmtiles"
+    },
+    "basemap-north-america": {
+      "mbtiles": "/data/basemap-north-america.pmtiles"
+    },
+    "basemap-aunz": {
+      "mbtiles": "/data/basemap-aunz.pmtiles"
+    },
+    "osm-infrastructure": {
+      "mbtiles": "/data/osm-infrastructure.mbtiles"
+    },
+    "geonames-cities": {
+      "mbtiles": "/data/geonames-cities.mbtiles"
+    },
+    "demographics-us": {
+      "mbtiles": "/data/demographics-us.mbtiles"
+    },
+    "demographics-europe": {
+      "mbtiles": "/data/demographics-europe.mbtiles"
+    },
+    "demographics-australia": {
+      "mbtiles": "/data/demographics-australia.mbtiles"
+    },
+    "water-us": {
+      "mbtiles": "/data/water-us.mbtiles"
+    },
+    "dams-nid": {
+      "mbtiles": "/data/dams-nid.mbtiles"
+    }
+  },
+  "styles": {
+    "infrastructure": {
+      "style": "infrastructure.json",
+      "tilejson": {
+        "bounds": [-180, -85, 180, 85]
+      }
+    }
+  }
+}

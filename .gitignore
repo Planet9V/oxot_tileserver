@@ -1,0 +1,19 @@
+# Downloaded source data (large files)
+data/raw/
+data/tiles/*.mbtiles
+data/tiles/*.pmtiles
+!data/tiles/.gitkeep
+
+# Environment
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
