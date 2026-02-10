@@ -1,0 +1,162 @@
+{
+  "version": "1.2.0",
+  "title": "OXOT Tileserver Wiki",
+  "generated": "2026-02-11T02:00:00Z",
+  "tree": [
+    {
+      "slug": "INDEX",
+      "title": "OXOT Tileserver Documentation",
+      "children": [
+        {
+          "slug": "01-OVERVIEW",
+          "title": "System Overview",
+          "children": [
+            { "slug": "01a-ARCHITECTURE", "title": "Architecture & Components" },
+            { "slug": "01b-STACK", "title": "Technology Stack" },
+            { "slug": "01c-REQUIREMENTS", "title": "System Requirements" }
+          ]
+        },
+        {
+          "slug": "02-DATA-SOURCES",
+          "title": "Data Sources",
+          "children": [
+            { "slug": "02a-BASEMAP", "title": "Basemap Sources" },
+            {
+              "slug": "02b-DEMOGRAPHICS",
+              "title": "Demographics & Population",
+              "children": [
+                { "slug": "02b1-CENSUS-US", "title": "US Census TIGER/Line + ACS" },
+                { "slug": "02b2-EUROSTAT", "title": "Eurostat NUTS + Nuts2json" },
+                { "slug": "02b3-ABS-AUSTRALIA", "title": "ABS Census Boundaries" },
+                { "slug": "02b4-STATS-NZ", "title": "Stats NZ Boundaries" },
+                { "slug": "02b5-GEONAMES", "title": "GeoNames Cities" }
+              ]
+            },
+            {
+              "slug": "02c-ELECTRIC",
+              "title": "Electric Grid",
+              "children": [
+                { "slug": "02c1-OSM-POWER", "title": "OSM Power Infrastructure" },
+                { "slug": "02c2-EIA", "title": "EIA US Energy Atlas" },
+                { "slug": "02c3-HIFLD", "title": "HIFLD Open Data" },
+                { "slug": "02c4-ENTSOE", "title": "ENTSO-E / GridKit" },
+                { "slug": "02c5-GEOSCIENCE-AU", "title": "Geoscience Australia" },
+                { "slug": "02c6-AWESOME-GRID-MAPPING", "title": "Awesome Electrical Grid Mapping" }
+              ]
+            },
+            {
+              "slug": "02d-WATER",
+              "title": "Water Infrastructure",
+              "children": [
+                { "slug": "02d1-OSM-WATER", "title": "OSM Water Tags" },
+                { "slug": "02d2-EPA-SDWIS", "title": "EPA SDWIS + WATERS" },
+                { "slug": "02d3-EEA-WISE", "title": "EEA WISE" },
+                { "slug": "02d4-NID-DAMS", "title": "National Inventory of Dams" },
+                { "slug": "02d5-BOM-AUSTRALIA", "title": "Australian BoM Water" }
+              ]
+            },
+            { "slug": "02e-TELECOMS", "title": "Telecoms Infrastructure" }
+          ]
+        },
+        {
+          "slug": "03-INSTALLATION",
+          "title": "Installation & Setup",
+          "children": [
+            { "slug": "03a-DOCKER-SETUP", "title": "Docker Deployment" },
+            { "slug": "03b-OPTIONS", "title": "Installation Options A-E" },
+            { "slug": "03c-CONVERTER", "title": "Converter Container" },
+            { "slug": "03d-ENVIRONMENT", "title": "Environment Configuration" }
+          ]
+        },
+        {
+          "slug": "04-PIPELINE",
+          "title": "Data Pipeline",
+          "children": [
+            { "slug": "04a-DOWNLOAD", "title": "Download Scripts" },
+            { "slug": "04b-EXTRACT", "title": "OSM Extraction" },
+            { "slug": "04c-CONVERT", "title": "Conversion & Tippecanoe" },
+            { "slug": "04d-LOAD", "title": "Loading & Verification" },
+            { "slug": "04e-MAINTENANCE", "title": "Updates & Scheduling" }
+          ]
+        },
+        {
+          "slug": "05-API",
+          "title": "API Reference",
+          "children": [
+            { "slug": "05a-REST-ENDPOINTS", "title": "REST API Endpoints" },
+            { "slug": "05b-TILEJSON", "title": "TileJSON Metadata" },
+            { "slug": "05c-VECTOR-TILES", "title": "Vector Tile Format" },
+            { "slug": "05d-STYLES", "title": "Style API" }
+          ]
+        },
+        {
+          "slug": "06-INTEGRATION",
+          "title": "Application Integration",
+          "children": [
+            { "slug": "06a-MAPLIBRE", "title": "MapLibre GL JS" },
+            { "slug": "06b-LEAFLET", "title": "Leaflet Integration" },
+            { "slug": "06c-OPENLAYERS", "title": "OpenLayers Integration" },
+            { "slug": "06d-OXOT-CYBERDT", "title": "OXOT Cyber DT Integration" },
+            { "slug": "06e-CUSTOM-APPS", "title": "Custom Application Guide" }
+          ]
+        },
+        {
+          "slug": "07-CUSTOM-TILES",
+          "title": "Custom Tile Creation",
+          "children": [
+            { "slug": "07a-GEOJSON-AUTHORING", "title": "GeoJSON Authoring" },
+            { "slug": "07b-CUSTOMER-LAYERS", "title": "Per-Customer Facility Layers" },
+            { "slug": "07c-EQUIPMENT-LAYERS", "title": "Equipment & Fixed Asset Layers" },
+            { "slug": "07d-STYLING", "title": "Custom Layer Styling" },
+            { "slug": "07e-CARDS-DISPLAY", "title": "Map Cards & Popups" }
+          ]
+        },
+        {
+          "slug": "08-OPERATIONS",
+          "title": "Operations & Maintenance",
+          "children": [
+            { "slug": "08a-MONITORING", "title": "Health & Monitoring" },
+            { "slug": "08b-TROUBLESHOOTING", "title": "Troubleshooting Guide" },
+            { "slug": "08c-PERFORMANCE", "title": "Performance Tuning" },
+            { "slug": "08d-BACKUP-RESTORE", "title": "Backup & Restore" }
+          ]
+        },
+        { "slug": "09-GLOSSARY", "title": "Glossary of Terms" },
+        { "slug": "10-REFERENCES", "title": "References & Citations (APA)" },
+        { "slug": "11-CHANGELOG", "title": "Changelog" },
+        {
+          "slug": "13-USE-CASES",
+          "title": "Use Cases & Implementation",
+          "children": [
+            {
+              "slug": "13a-CYBER-ATTACK-MAPPING",
+              "title": "Cyber Attack Origin & Destination",
+              "children": [
+                { "slug": "13a1-IP-GEOLOCATION", "title": "IP Address Geolocation" },
+                { "slug": "13a2-THREAT-INTELLIGENCE-FEEDS", "title": "Threat Intelligence Feeds" }
+              ]
+            },
+            { "slug": "13b-FACILITY-BUILDING-LOCATION", "title": "Facility & Building Location" },
+            { "slug": "13c-SOCIOECONOMIC-ANALYSIS", "title": "Socioeconomic & Demographic Analysis" },
+            {
+              "slug": "13d-GEOPOLITICAL-EVENTS",
+              "title": "Geopolitical Events & News",
+              "children": [
+                { "slug": "13d1-NATURAL-HAZARDS", "title": "Natural Hazard Overlays" }
+              ]
+            },
+            {
+              "slug": "13e-SUPPLY-CHAIN-MAPPING",
+              "title": "Supply Chain Visualization",
+              "children": [
+                { "slug": "13e1-SHIPPING-ROUTES", "title": "Shipping & Logistics" }
+              ]
+            },
+            { "slug": "13f-SIMULATION-WARGAMING", "title": "Simulation & War Gaming" },
+            { "slug": "13g-ADDITIONAL-USE-CASES", "title": "Additional Use Cases" }
+          ]
+        }
+      ]
+    }
+  ]
+}
